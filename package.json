@@ -1,0 +1,19 @@
+{
+  "name": "chrome-it-acronysm",
+  "version": "1.0.0",
+  "description": "Highlights acronyms via a tooltip. Acronyms are stored in acronyms.json",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "google",
+    "chrome",
+    "extension",
+    "acronyms",
+    "it",
+    "acronyms"
+  ],
+  "author": "Alvaro Uribe",
+  "license": "MIT"
+}
