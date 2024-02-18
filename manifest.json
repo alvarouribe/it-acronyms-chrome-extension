@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Acronym Tooltip",
+  "version": "1.0",
+  "description": "Show tooltips for acronyms stored in a JSON file",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://*/*" // Necessary to access acronyms.json from any website
+  ],
+  "background": {
+    "service_worker": "background.js" // Optional: Background script for advanced features
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"], // Matches all websites
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "acronyms.json" // Ensure acronyms.json is accessible
+  ]
+}

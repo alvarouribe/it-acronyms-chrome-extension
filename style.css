@@ -1,0 +1,22 @@
+.acronym-tooltip {
+  /* Basic styling */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  font-size: 12px;
+  line-height: 1.2;
+  position: absolute;
+  z-index: 999; /* Ensure tooltip stays on top */
+
+  /* Optional: Arrow indicator */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #f0f0f0;
+  }
+}
