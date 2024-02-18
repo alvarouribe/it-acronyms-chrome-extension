@@ -6,7 +6,7 @@
   "permissions": [
     "activeTab",
     "storage",
-    "https://*/*" // Necessary to access acronyms.json from any website
+    "https://raw.githubusercontent.com/alvarouribe/it-acronyms-chrome-extension/main/acronyms.json" // Necessary to access acronyms.json from any website
   ],
   "background": {
     "service_worker": "background.js" // Optional: Background script for advanced features
